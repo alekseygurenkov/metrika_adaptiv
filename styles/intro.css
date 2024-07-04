@@ -1,0 +1,68 @@
+.intro__text {
+    width: 956px;
+}
+
+.intro-image {
+    position: relative;
+    margin-top: 30px;
+    height: 500px;
+    width: 1150px;
+    background-repeat: no-repeat;
+    background-image: url('../resources/img_1.png'); /* на GitHub путь указываю с .. точками выход из папки <link rel="stylesheet" href="styles/styles.css" */
+}
+
+.intro-image__text {
+    position: absolute;
+    left: 40px;
+    bottom: 40px;
+    width: 430px;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 27px;
+    color: #ffffff;
+}
+
+@media (max-width: 1199px) {
+    .intro__text {
+        width: 802px;
+    }
+
+    .intro-image {
+        width: 100%;
+        height: 400px;
+        background-size: cover;
+        background-position: center;
+    }
+
+    .intro-image__text {
+        font-size: 20px;
+        line-height: 27px;
+    }
+    
+}
+@media (max-width: 767px) { 
+    .intro__text {
+        width: 100%;
+    }
+
+    .intro-image {
+        width: 100%;
+        height: 304px;
+    }
+
+    .intro-image__text {
+        font-size: 16px;
+        line-height: 22px;
+        width: 312px;
+        left: 15px;
+        bottom: 15px;
+    }
+    
+}
+
+@media (max-width: 400px) {
+    .intro-image {
+        background-image: url('../resources/Rectangle_1_350x304.png');
+    }
+    
+}
