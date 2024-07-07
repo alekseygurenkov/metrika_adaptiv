@@ -9,7 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Manrope&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./main.css"> <!-- на GitHub путь указываю без точки и слэша <link rel="stylesheet" href="styles/styles.css"> -->
+    <link rel="stylesheet" href="./main.css"> <!-- на GitHub путь указываю с одной точкой если не надо выходить из папки, если надо 2 точки -->
 </head>
 <body>
         <!-- <header>
@@ -44,62 +44,113 @@
                             <h2 id="projects">проекты</h2>
                             <ul class="projects">
                                     <li class="project">
-                                            <img class="project_image" src="resources/room1.png" alt="красивый красный диван">
+                                            <picture>
+                                                <source
+                                                media="(max-width: 500px)"
+                                                srcset="resources/room1_mobile.png"
+                                                >
+
+                                                <source
+                                                media="(max-width: 1199px)"
+                                                srcset="resources/room1_tablet.png"
+                                                >
+
+                                                <img
+                                                    class="project_image" 
+                                                    src="resources/room1.png" 
+                                                    alt="красивый красный диван"
+                                                >
+                                            </picture>
                                             <h3 class="project__title">ЖК ПРАВОБЕРЕЖНЫЙ — 112 м² — 2023</h3>
                                             <a class="project_link" href="/">Подробнее →</a>
                                     </li>
                                     <li class="project">
-                                        <img class="project_image" src="resources/room2.jpeg" alt="телевизор на стене">
+                                        <picture>
+                                            <source
+                                                media="(max-width: 500px)"
+                                                srcset="resources/room2_mobile.png"
+                                                >
+
+                                                <source
+                                                media="(max-width: 1199px)"
+                                                srcset="resources/room2_tablet.png"
+                                                >
+                                            <img
+                                                class="project_image"
+                                                src="resources/room2.jpeg"
+                                                alt="телевизор на стене"
+                                             >
+                                        </picture>
                                         <h3 class="project__title">ЖК НОРВЕЖСКИЙ ПАРК — 75 М² — 2023</h3>
                                         <a class="project_link" href="/">Подробнее →</a>
                                     </li>
                                     <li class="project">
-                                        <img class="project_image" src="resources/room3.jpeg" alt="лестница с прозрачными перилами">
+                                        <picture>
+                                            <source
+                                                media="(max-width: 500px)"
+                                                srcset="resources/room3_mobile.png"
+                                                >
+
+                                                <source
+                                                media="(max-width: 1199px)"
+                                                srcset="resources/room3_tablet.png"
+                                                >
+                                            <img
+                                                class="project_image"
+                                                src="resources/room3.jpeg"
+                                                alt="лестница с прозрачными перилами"
+                                            >
+                                        </picture>
                                         <h3 class="project__title">ЖК СОСНОВСКИЕ ОЗЕРА — 94 М² — 2022</h3>
                                         <a class="project_link" href="/">Подробнее →</a>
                                         <a href="" class="fullWidthBtn" style="margin-top: 90px;">Смотреть все проекты</a>
                                     </li>
                             </ul>
                        </section>
-                <!-- <div class="container-black section-long section-full">
+                       
+                <div class="container-black section-long section-full">
                     <section class="section-center">
                         <h2 id="services">услуги</h2>
                         <ul class="services">
                             <li class="service">
                                 <img
-                                class="service__image"
-                                src="resources/Rectangle_2.jpeg"
-                                alt="чертёж карандашем"
+                                    class="service__image"
+                                    src="./resources/box/Rectangle 2.png" 
+                                    alt="чертеж карандашом"
                                 >
+                                <h3>Планировочное решение</h3>
+                                <a class="service__btn">от 2500₽/м²</a>
                             </li>
-                            <h3>Планировочное решение — от 2500₽/м²</h3>
                             <li class="service">
                                 <img
-                                class="service__image"
-                                src="resources/Rectangle_3.jpeg"
-                                alt="чертёж карандашем"
+                                    class="service__image"
+                                    src="./resources/box/Rectangle 3.png" 
+                                    alt="колировка"
                                 >
+                                <h3>Дизайн-проект</h3>
+                                <a class="service__btn">от 3000₽/м²</a>
                             </li>
-                            <h3>Дизайн-проект — от 3000₽/м²</h3>
                             <li class="service">
                                 <img
-                                class="service__image"
-                                src="resources/Rectangle_4.jpeg"
-                                alt="чертёж карандашем"
+                                    class="service__image"
+                                    src="./resources/box/Rectangle 4.png" 
+                                    alt="проект на бумаге"
                                 >
+                                <h3>Авторский надзор</h3>
+                                <a class="service__btn">от 30 000₽/мес</a>
                             </li>
-                            <h3>Авторский надзор — от 30 000₽ в месяц</h3>
                             <li class="service">
                                 <img
-                                class="service__image"
-                                src="resources/Rectangle_5.jpeg"
-                                alt="чертёж карандашем"
+                                    class="service__image"
+                                    src="./resources/box/Rectangle 5.png" 
+                                    alt="склад"
                                 >
+                                <h3>Комплектация</h3>
+                                <a class="service__btn">5% от стоимости</a>
                             </li>
-                            <h3>Комплектация — 5% от стоимости спецификации</h3>
                         </ul>
                     </section>
-                </div>
+                <!-- </div>
                 <div class="full_img">
                     <div class="gallery">
                         <p class="gallery__text">Проект двухкомнатной<br>квартиры в ЖК Лесной Пейзаж</p>
