@@ -7,7 +7,7 @@
 }
 
 .service {
-    width: 570px;
+    width: calc(50% - 10px);
     position: relative;
 }
 
@@ -23,6 +23,26 @@
     background-color: #AD1818;
 
 }
+.container-black {
+    padding-left: 123px;
+    padding-right: 123px;
+    padding-top: 150px;
+    padding-bottom: 150px;
+}
+
+.fullWidthBtn-2 {
+        display: block;
+        width: 100%;
+        height: 153px;
+        line-height: 153px;
+        border: 1px solid #AD1818;
+        background-color: #AD1818;
+        border-radius: 5px;
+        text-decoration: none;
+        text-align: center;
+        color: #ffffff;
+        font-size: 30px;
+}
 
 .sevices :first-child {
     margin-top: 0;
@@ -31,4 +51,30 @@
 .service__image {
     margin-bottom: 15px;
     width: 100%;
+}
+
+@media (max-width: 1199px) {
+
+    .services {
+       
+        column-gap: 10px; /* растояние между колоннами */
+        row-gap: 80px; /* растояние между строками */
+    }
+
+    .service {
+        width: 460px;
+    }
+}
+@media (max-width: 767px) { 
+
+    .services {
+        margin-left: 11px;
+        margin-right: 11px;
+        row-gap: 60px; /* растояние между строками */
+    }
+
+    .service {
+        width: 100%;
+    }
+    
 }
